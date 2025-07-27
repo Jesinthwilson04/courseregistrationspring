@@ -23,4 +23,9 @@ public class CourseService {
     public List<CourseRegistry> getReg() {
         return  courseRegistryRepo.findAll();
     }
+
+    public void resisterStdCourse(String name, String emailid, String coursename) {
+        Course course = new Course(name,emailid,coursename);
+        courseRepo.save(course);
+    }
 }

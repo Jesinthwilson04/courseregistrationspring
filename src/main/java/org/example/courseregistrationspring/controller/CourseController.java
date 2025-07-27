@@ -25,10 +25,11 @@ public class CourseController {
         return courseService.getReg();
     }
     @PostMapping("/register")
-    public void registerStdCourses(@RequestParam("name") String name,
+    public String registerStdCourses(@RequestParam("name") String name,
                                    @RequestParam("emailid") String emailid,
                                    @RequestParam("coursename") String coursename){
+        courseService.resisterStdCourse(name,emailid,coursename);
 
-
+        return "Student name:"+name+",emailid:"+emailid+",coursename:"+coursename+".";
     }
 }
