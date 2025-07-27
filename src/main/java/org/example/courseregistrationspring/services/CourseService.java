@@ -25,7 +25,7 @@ public class CourseService {
     }
 
     public void resisterStdCourse(String name, String emailid, String coursename) {
-        Course course = new Course(name,emailid,coursename);
-        courseRepo.save(course);
+        CourseRegistry course = new CourseRegistry(name,emailid,coursename);
+        courseRegistryRepo.save(course);
     }
 }

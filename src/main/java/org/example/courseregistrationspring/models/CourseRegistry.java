@@ -17,4 +17,5 @@ public class CourseRegistry {
     private String emailId;
     private String courseName;
 
+
 }
