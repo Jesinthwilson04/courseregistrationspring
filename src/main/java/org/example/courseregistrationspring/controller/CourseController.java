@@ -18,7 +18,7 @@ public class CourseController {
         return courseService.getCourses();
 
     }
-    @GetMapping("/regitered")
+    @GetMapping("/courses/regitered")
     public List<CourseRegistry> getRegistrations(){
         return courseService.getReg();
     }
