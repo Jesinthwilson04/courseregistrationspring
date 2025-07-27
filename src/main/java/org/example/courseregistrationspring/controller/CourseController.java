@@ -5,6 +5,7 @@ import org.example.courseregistrationspring.models.CourseRegistry;
 import org.example.courseregistrationspring.services.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,6 +23,6 @@ public class CourseController {
     public List<CourseRegistry> getRegistrations(){
         return courseService.getReg();
     }
-
+    @PostMapping("/register")
 
 }
