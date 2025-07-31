@@ -8,14 +8,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 @Data
 @Entity
-@AllArgsConstructor
 public class CourseRegistry {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String emailId;
-    private String courseName;
+    private String emailid;
+    private String coursename;
+    public CourseRegistry(String name,String emailid,String coursename){
+        this.name=name;
+        this.emailid=emailid;
+        this.coursename=coursename;
+    }
+    public CourseRegistry(){}
 
 
 }

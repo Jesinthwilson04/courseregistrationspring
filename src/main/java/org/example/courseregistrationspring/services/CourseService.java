@@ -24,7 +24,7 @@ public class CourseService {
         return  courseRegistryRepo.findAll();
     }
 
-    public void resisterStdCourse(String name, String emailid, String coursename) {
+    public void registerStdCourse(String name, String emailid, String coursename) {
         CourseRegistry course = new CourseRegistry(name,emailid,coursename);
         courseRegistryRepo.save(course);
     }

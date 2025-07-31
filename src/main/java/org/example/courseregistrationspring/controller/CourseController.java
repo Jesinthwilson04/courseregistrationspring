@@ -20,7 +20,7 @@ public class CourseController {
         return courseService.getCourses();
 
     }
-    @GetMapping("/courses/regitered")
+    @GetMapping("/courses/registered")
     public List<CourseRegistry> getRegistrations(){
         return courseService.getReg();
     }
@@ -28,7 +28,7 @@ public class CourseController {
     public String registerStdCourses(@RequestParam("name") String name,
                                    @RequestParam("emailid") String emailid,
                                    @RequestParam("coursename") String coursename){
-        courseService.resisterStdCourse(name,emailid,coursename);
+        courseService.registerStdCourse(name,emailid,coursename);
 
         return "Student name:"+name+",emailid:"+emailid+",coursename:"+coursename+".";
     }
