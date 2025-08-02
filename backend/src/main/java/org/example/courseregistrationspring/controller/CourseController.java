@@ -30,6 +30,6 @@ public class CourseController {
                                    @RequestParam("coursename") String coursename){
         courseService.registerStdCourse(name,emailid,coursename);
 
-        return "Student name:"+name+",\nemailid:"+emailid+",\ncoursename:"+coursename+".";
+        return "Student name:"+name+",<br> emailid:"+emailid+",<br> coursename:"+coursename+".";
     }
 }
