@@ -24,14 +24,14 @@ body{
     padding: 20px;
 }
 a{
-    
+    color: cyan;
 }
 a:link {
     text-decoration: none;
-    color: cyan;
+
 }
 a:hover {
     color: rgb(255, 5, 5);
-    text-decoration: none;
+    text-decoration: underline;
     
 }
