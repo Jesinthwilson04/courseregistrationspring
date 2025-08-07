@@ -23,3 +23,15 @@ body{
     border-radius: 12px;
     padding: 20px;
 }
+a{
+    
+}
+a:link {
+    text-decoration: none;
+    color: cyan;
+}
+a:hover {
+    color: rgb(255, 5, 5);
+    text-decoration: none;
+    
+}
